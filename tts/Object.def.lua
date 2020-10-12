@@ -205,6 +205,27 @@ function Object.deal(count, destination, handIndex) end
 ---@return boolean
 function Object.destruct() end
 
+---@shape tts__EditButtonParameters
+---@field index number @A String of the function's name that will be run when button is clicked.
+---@field click_function nil | string @A String of the function's name that will be run when button is clicked.
+---@field function_owner nil | string @The Object which contains the click_function function. Defaults to Global>
+---@field label nil | string @Text that appears on the button. Defaults to ''.
+---@field position nil | tts__VectorShape @Where the button appears, relative to the Object's center.
+---@field rotation nil | tts__VectorShape @How the button is rotated, relative to the Object's rotation. Defaults to {x=0, y=0, z=0}.
+---@field scale nil | tts__VectorShape @Scale of the button, relative to the Object's scale. Defaults to {x=1, y=1, z=1}.
+---@field width nil | number @How wide the button will be, relative to the Object. Defaults to 100.
+---@field height nil | number @How tall the button will be, relative to the Object. Defaults to 100.
+---@field font_size nil | number @Size the label font will be, relative to the Object. Defaults to 100.
+---@field color nil | tts__ColorShape @A Color for the clickable button. Defaults to {r=1, g=1, b=1}.
+---@field font_color nil | tts__ColorShape @A Color for the label text.  Defaults to {r=0, g=0, b=0}.
+---@field hover_color nil | tts__ColorShape @A Color for the background during mouse-over.
+---@field press_color nil | tts__ColorShape @A Color for the background when clicked.
+---@field tooltip nil | string @Popup of text, similar to how an Object's name is displayed on mouseover.  Defaults to ''.
+
+---@param params tts__EditButtonParameters
+---@return boolean
+function Object.editButton(params) end
+
 ---
 --- Returns the object's angular velocity, in radians per second.
 ---@return tts__Vector
