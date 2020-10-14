@@ -527,6 +527,9 @@ function Object.isSmoothMoving() end
 ---@return boolean
 function Object.jointTo(object, parameters) end
 
+---@param object tts__Object
+---@return tts__Object
+function Object.putObject(object) end
 ---@param index number @button index for this object, starting at 0
 ---@return boolean
 function Object.removeButton(index) end
