@@ -30,6 +30,7 @@ Color = {}
 
 ---@overload fun(src: tts__Color): tts__Color
 ---@overload fun(r: number, g: number, b: number): tts__Color
+---@overload fun(r: number, g: number, b: number, a:number): tts__Color
 ---@param r number
 ---@param g number
 ---@param b number

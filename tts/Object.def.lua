@@ -272,6 +272,9 @@ function Object.getBoundsNormalized() end
 ---@return tts__Button[]
 function Object.getButtons() end
 
+---@return tts__Color
+function Object.getColorTint() end
+
 ---@shape tts__Object_ImageCustomObject
 ---@field image string
 ---@field image_bottom string @Same value as image_secondary
@@ -541,6 +544,14 @@ function Object.removeButton(index) end
 ---@return true
 function Object.scale(scale) end
 
+---@param color tts__Color
+---@return boolean
+function Object.setColorTint(color) end
+
+
+---@param colors tts__PlayerColor[]
+---@return boolean
+function Object.setInvisibleTo(colors) end
 ---
 --- Sets whether the object is locked/frozen in place.
 ---
