@@ -168,6 +168,8 @@ UI = {}
 ---@shape tts__UIImageElement_Attributes : tts__UIElementBase_Attributes
 ---@field image string
 ---@field preserveAspect nil | tts__UIElement_Boolean
+---@field raycastTarget  nil | tts__UIElement_Boolean
+---@field type  nil | 'Simple' | 'Sliced' | 'Filled' | 'Tiled'
 
 ---@shape tts__UIImageElement : tts__UIElementBase
 ---@field attributes tts__UIImageElement_Attributes

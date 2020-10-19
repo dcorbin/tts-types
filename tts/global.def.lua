@@ -7,7 +7,7 @@ function addHotkey(label, methodName, triggerOnKeyUp) end
 
 ---@overload fun(message: string): boolean
 ---@param message string
----@param color string
+---@param color string | tts__Color
 ---@return boolean
 function broadcastToAll(message, color) end
 

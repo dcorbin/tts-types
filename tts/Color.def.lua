@@ -26,7 +26,65 @@
 ---@field [2] number
 ---@field [3] number
 ---@field [4] number
-Color = {}
+ColorInstance = {}
+
+
+---@return number, number, number, number
+function ColorInstance:get()
+    return self.r, self.g, self.b, self.a
+end
+
+---@overload fun(): string
+---@param includeAlpha nil | boolean
+---@return string
+function ColorInstance:toHex(includeAlpha) end
+
+---@overload fun(): string
+---@param tolerance nil | number
+---@return string
+function ColorInstance:toString(tolerance) end
+
+---@overload fun(r: number, g: number, b: number)
+---@param r number
+---@param g number
+---@param b number
+---@param a number
+function ColorInstance:set(r, g, b, a) end
+
+---@param key 'r' | 'g' | 'b' | 'a'
+---@param value number
+function ColorInstance:setAt(key, value) end
+
+---@overload fun(other: any)
+---@param other any
+---@param margin number
+---@return boolean
+function ColorInstance:equals(other, margin) end
+
+---@param other any
+---@param margin number
+---@return boolean
+function ColorInstance:__eq(other, margin) end
+
+---@return tts__Color
+function ColorInstance:copy() end
+
+---@overload fun(): string
+---@param prefix string
+---@return string
+function ColorInstance:dump(prefix) end
+
+---@return string
+function ColorInstance:__tostring() end
+
+---@param other tts__Color
+---@param t number
+function ColorInstance:lerp(other, t) end
+
+---@class tts__GlobalColor
+---@field Yellow tts__Color
+---@field yellow tts__Color
+ Color = {}
 
 ---@overload fun(src: tts__Color): tts__Color
 ---@overload fun(r: number, g: number, b: number): tts__Color
@@ -49,55 +107,3 @@ function Color.fromString(strColor) end
 ---@param hexColor string
 ---@return tts__Color
 function Color.fromHex(hexColor) end
-
----@return number, number, number, number
-function Color:get()
-    return self.r, self.g, self.b, self.a
-end
-
----@overload fun(): string
----@param includeAlpha nil | boolean
----@return string
-function Color:toHex(includeAlpha) end
-
----@overload fun(): string
----@param tolerance nil | number
----@return string
-function Color:toString(tolerance) end
-
----@overload fun(r: number, g: number, b: number)
----@param r number
----@param g number
----@param b number
----@param a number
-function Color:set(r, g, b, a) end
-
----@param key 'r' | 'g' | 'b' | 'a'
----@param value number
-function Color:setAt(key, value) end
-
----@overload fun(other: any)
----@param other any
----@param margin number
----@return boolean
-function Color:equals(other, margin) end
-
----@param other any
----@param margin number
----@return boolean
-function Color:__eq(other, margin) end
-
----@return tts__Color
-function Color:copy() end
-
----@overload fun(): string
----@param prefix string
----@return string
-function Color:dump(prefix) end
-
----@return string
-function Color:__tostring() end
-
----@param other tts__Color
----@param t number
-function Color:lerp(other, t) end
