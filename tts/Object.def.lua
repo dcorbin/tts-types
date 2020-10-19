@@ -549,6 +549,10 @@ function Object.scale(scale) end
 function Object.setColorTint(color) end
 
 
+---@param customObject tts__Object_CustomObject
+---@return boolean
+function Object.setCustomObject(customObject) end
+
 ---@param colors tts__PlayerColor[]
 ---@return boolean
 function Object.setInvisibleTo(colors) end
