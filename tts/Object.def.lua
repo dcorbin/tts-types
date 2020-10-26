@@ -378,6 +378,8 @@ function Object.getData() end
 ---@return tts__ContainerState
 function Container.getData() end
 
+---@return string
+function Object.getGMNotes() end
 ---
 --- Object's unique identifier.
 ---@return string
