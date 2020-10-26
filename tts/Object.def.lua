@@ -226,6 +226,9 @@ function Object.destruct() end
 ---@return boolean
 function Object.editButton(params) end
 
+---@return boolean
+function Object.flip() end
+
 ---
 --- Returns the object's angular velocity, in radians per second.
 ---@return tts__Vector
