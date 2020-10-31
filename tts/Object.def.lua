@@ -167,6 +167,10 @@ local Token
 ---@class tts__VRUI : tts__Object
 
 
+---@param object tts__Object
+---@return boolean
+function Object.addAttachment(object) end
+
 ---@alias tts__Object_DealDestination tts__PlayerHandColor | "All" | "Seated"
 
 
@@ -234,6 +238,8 @@ function Object.flip() end
 ---@return tts__Vector
 function Object.getAngularVelocity() end
 
+---@return tts__IndexedSimpleObjectState[]
+function Object.getAttachments() end
 ---@shape tts__Bounds
 ---@field center tts__Vector
 ---@field size tts__Vector
@@ -538,6 +544,11 @@ function Object.jointTo(object, parameters) end
 ---@param object tts__Object
 ---@return tts__Object
 function Object.putObject(object) end
+
+---@param index number
+---@return tts__Object
+function Object.removeAttachment(index) end
+
 ---@param index number @button index for this object, starting at 0
 ---@return boolean
 function Object.removeButton(index) end
