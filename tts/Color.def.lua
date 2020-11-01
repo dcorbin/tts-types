@@ -84,6 +84,8 @@ function ColorInstance:lerp(other, t) end
 ---@class tts__GlobalColor
 ---@field Yellow tts__Color
 ---@field yellow tts__Color
+---@field Red tts__Color
+---@field red tts__Color
 Color = {}
 
 ---@overload fun(src: tts__Color): tts__Color
