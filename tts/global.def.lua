@@ -1,5 +1,6 @@
 
----@overload fun(label: string, callback:fun(label: string, object: tts__Object, pointerPosition: nil | tts__Vector, isKeyUp: boolean): void)
+---@overload fun(label: string, callback:fun(playerColor: tts__PlayerColor, object: tts__Object, pointerPosition: nil | tts__Vector, isKeyUp: boolean): void)
+---@overload fun(label: string, callback:fun(playerColor: tts__PlayerColor): void)
 ---@param label string
 ---@param methodName string
 ---@param triggerOnKeyUp boolean @Defaults to false
