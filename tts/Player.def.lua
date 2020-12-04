@@ -18,10 +18,12 @@
 ---@field team string
 local PlayerInstance = {}
 
----@shape tts__HandTransform
+---@shape tts__SetHandTransformParameters
 ---@field position tts__Vector
 ---@field rotation tts__Vector
 ---@field scale tts__Vector
+
+---@shape tts__HandTransform : tts__SetHandTransformParameters
 ---@field forward tts__Vector
 ---@field right tts__Vector
 ---@field up tts__Vector
@@ -66,6 +68,12 @@ function PlayerInstance.getPointerRotation() end
 -- Returns an array of objects currently selected by the player.
 ---@return tts__Object[]
 function PlayerInstance.getSelectedObjects() end
+
+---@overload fun(parameters:tts__SetHandTransformParameters)
+---@param handIndex number @Default 1
+---@param parameters tts__SetHandTransformParameters
+---@return tts__HandTransform
+function PlayerInstance.setHandTransform(parameters, handIndex) end
 
 ---@class tts__GlobalPlayer
 ---@field White tts__Player
