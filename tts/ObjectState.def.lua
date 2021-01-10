@@ -107,6 +107,7 @@
 ---@field FogSeethrough nil | boolean
 ---@field FogReverseHiding nil | boolean
 ---@field vector nil | tts__CharVectorShape
+---@field ChildObjects tts__ObjectState[]
 
 ---@shape tts__ContainerState : tts__ObjectState
 ---@field ContainedObjects tts__ObjectState[]

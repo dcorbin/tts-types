@@ -75,6 +75,10 @@ function PlayerInstance.getSelectedObjects() end
 ---@return tts__HandTransform
 function PlayerInstance.setHandTransform(parameters, handIndex) end
 
+---@param position tts__Vector
+---@return boolean
+function PlayerInstance.pingTable(position) end
+
 ---@class tts__GlobalPlayer
 ---@field White tts__Player
 ---@field Brown tts__Player
