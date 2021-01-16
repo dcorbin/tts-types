@@ -705,6 +705,7 @@ function Object.positionToWorld(position) end
 ---@return true
 function Object.registerCollisions(stay) end
 
+function Object.removeChildren() end
 ---
 --- If this object is a deck or bag, takes on object out.
 ---
