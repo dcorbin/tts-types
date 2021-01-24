@@ -171,6 +171,12 @@ local Token
 ---@return boolean
 function Object.addAttachment(object) end
 
+---@overload fun(label:string, callback:fun(color:tts__PlayerColor))
+---@param label string
+---@param callback fun(color: tts__PlayerColor)
+---@param keepOpen boolean
+---@return boolean
+function Object.addContextMenuItem(label, callback, keepOpen) end
 ---@alias tts__Object_DealDestination tts__PlayerHandColor | "All" | "Seated"
 
 
