@@ -10,7 +10,7 @@ UI = {}
 
 ---@alias tts__UILayoutElement_Tag "HorizontalLayout" | "VerticalLayout" | "TableLayout"
 ---@alias tts__UILayoutElement tts__UIHorizontalLayoutElement | tts__UIVerticalLayoutElement
----@alias tts__UIElement_Tag  tts__UILayoutElement_Tag | "Button" | "Panel" | "Image" | "Text" | "Option" | "InputField" | "Cell" | "ToggleButton" | "ToggleGroup" | "TableLayout" | "Row" | "Defaults" | "Dropdown"
+---@alias tts__UIElement_Tag  tts__UILayoutElement_Tag | "Button" | "Panel" | "Image" | "Text" | "Option" | "InputField" | "Cell" | "ToggleButton" | "ToggleGroup" | "TableLayout" | "Row" | "Defaults" | "Dropdown" | "VerticalScrollView"
 ---@alias tts__UIElement tts__UILayoutElement | tts__UIButtonElement | tts__UIPanelElement | tts__UITextElement | tts__UIDropdownElement | tts__UIImageElement
 
 
@@ -31,7 +31,6 @@ UI = {}
 
 ---@alias tts__UIElement_HideAnimation "None" | "Shrink" | "FadeOut" | "SlideOut_Left" | "SlideOut_Right" | "SlideOut_Top" | "SlideOut_Bottom"
 ---@alias tts__UIElement_ShowAnimation "None" | "Grow" | "FadeIn" | "SlideIn_Left" | "SlideIn_Right" | "SlideIn_Top" | "SlideIn_Bottom"
-
 
 ---@alias tts__UIElement_CallbackFunction fun(player: tts__Player, value: string, id: nil | string)
 
